@@ -2,6 +2,12 @@ BlocBlog::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
+  resources :posts do
+    resources :comments
+  end
+
+  resources :author
+  
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
