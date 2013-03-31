@@ -8,14 +8,6 @@ BlocBlog::Application.routes.draw do
 
   get "authors/edit"
 
-  get "author/index"
-
-  get "author/new"
-
-  get "author/show"
-
-  get "author/edit"
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
