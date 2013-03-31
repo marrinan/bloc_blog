@@ -15,9 +15,9 @@ BlocBlog::Application.routes.draw do
     resources :comments
   end
 
-  resources :user
+  resources :users
 
-  resources :author
+  resources :authors
   
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
