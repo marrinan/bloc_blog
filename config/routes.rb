@@ -1,5 +1,21 @@
 BlocBlog::Application.routes.draw do
 
+  get "authors/index"
+
+  get "authors/new"
+
+  get "authors/show"
+
+  get "authors/edit"
+
+  get "author/index"
+
+  get "author/new"
+
+  get "author/show"
+
+  get "author/edit"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -8,6 +24,8 @@ BlocBlog::Application.routes.draw do
   end
 
   resources :user
+
+  resources :author
   
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
@@ -55,7 +73,7 @@ BlocBlog::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'posts#index'
+  root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
 
